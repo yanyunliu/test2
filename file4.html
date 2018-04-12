@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Untitled</title>
+<script type="text/javascript" data-dojo-config="'parseOnLoad':true,'async':true,'packages':[{'name':'gridx','location':'../gridx'},{'name':'clipart','location':'../../clipart'},{'name':'maqettaSamples','location':'../../../samples'},{'name':'maqetta','location':'../../maqetta'},{'name':'shapes','location':'../../shapes'},{'name':'zazl','location':'../../zazl'},{'name':'widgets','location':'../../custom'}],'themeMap':[['Android','',['themes/android/android.css']],['BlackBerry','',['themes/blackberry/blackberry.css']],['iPad','',['themes/ipad/ipad.css']],['iPhone','',['themes/iphone/iphone.css']],['.*','',['themes/iphone/iphone.css']]],'mblThemeFiles':[],'mblLoadCompatPattern':''" src="../../../project2/lib/dojo/dojo/dojo.js"></script>
+<script type="text/javascript">
+require([
+  "dijit/dijit",
+  "dojo/parser",
+  "maqetta/space",
+  "maqetta/AppStates",
+  "dojox/mobile",
+  "dojox/mobile/deviceTheme",
+  "dojo/hash",
+  "dojox/mobile/ScrollableView",
+  "shapes/Circle",
+  "dijit/form/DataList",
+  "dojox/mobile/ComboBox"
+]);
+</script>
+<style>@import "themes/claro/claro.css";@import "app.css";
+</style>
+<script type="text/javascript" src="app.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></meta>
+</head>
+<body data-maq-device="android_480x800" data-maq-flow-layout="true" data-maq-comptype="mobile" class="claro" data-maq-ws="collapse" data-maq-appstates="{}" id="myapp">
+ <h1 label="欢迎来到吉林大学拍照导航系统" data-dojo-type="dojox/mobile/Heading" style="background-color: white;"></h1>
+ <div id="ScrollableView_0" data-dojo-type="dojox/mobile/ScrollableView" selected="true" style="background-image: url('../../../project2/img/jlu.jpg'); background-position: center center; background-size: 100%;">
+   <input type="button" value="openCamera" style="width: 158.5833282470703px; height: 62.91667175292969px;" onclick="scamera();"></input>
+   <div data-dojo-type="shapes/Circle" style="border-width: 3px; border-style: solid; border-color: black; position: absolute; z-index: 900; width: 89px; border-bottom-left-radius: 50.5px 51px; background-position: center center; background-size: 100% auto; height: 90px; left: 192.917px; top: 608.167px; background-image: url(&quot;return.png&quot;);" onclick="location.href='index.html'"></div>
+  <select data-dojo-type="dijit/form/DataList" id="DataList_1" data-dojo-props="id: &quot;DataList_1&quot;" dojotype="dijit.form.DataList">
+  <option value="Item 1">
+      Item 1</option>
+    <option value="Item 2">
+      Item 2</option>
+    <option value="Item 3">
+      Item 3</option>
+  </select>
+  </div>
+</body>
+</html>
