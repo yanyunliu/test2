@@ -16,11 +16,7 @@
 <div id="container" tabindex="0"></div>
 <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.4&key=594cc0050f644d691547474bafb5e057"></script>
 <script type="text/javascript">
-    var map = new AMap.Map('container',{
-        resizeEnable: true,
-        zoom: 10,
-        center: [116.480983, 40.0958]
-    });
+
     mapObj = new AMap.Map('container');
     mapObj.plugin('AMap.Geolocation', function () {
         geolocation = new AMap.Geolocation({
