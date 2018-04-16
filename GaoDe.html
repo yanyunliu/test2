@@ -21,7 +21,7 @@
         zoom: 10,
         center: [116.480983, 40.0958]
     });
-    mapObj = new AMap.Map('iCenter');
+    mapObj = new AMap.Map('container');
     mapObj.plugin('AMap.Geolocation', function () {
         geolocation = new AMap.Geolocation({
             enableHighAccuracy: true,//是否使用高精度定位，默认:true
